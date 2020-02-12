@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+}
+
+.toppart {
+    display:flex;
+    justify-content: space-around;
+    
+}
+
+.thelist {
+    display:flex;
+    justify-content: space-around;
+    background:teal;
+}
