@@ -2,13 +2,13 @@ h1 {
     text-align: center;
 }
 
-.toppart {
+#form {
     display:flex;
     justify-content: space-around;
     
 }
 
-.thelist {
+#cart {
     display:flex;
     justify-content: space-around;
     background:teal;
