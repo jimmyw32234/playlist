@@ -25,19 +25,28 @@ function showArtist(){
 
 function showImage() {
     images.forEach(function(image) {
-        $("#images").append("<div>" + image + "</div>");
+        $("#images").append("<div>" + "<img src=" + image + ">" + "</div>");
     });
 }
 
 function showLink() {
     links.forEach(function(link) {
-        $("#links").append("<div>" + link + "</div>");
+        $("#links").append("<div>" + "<a href=" + link + ">" + "Listen" + "</a>" + "</div>");
     })
 }
 
 function songInfo(item1, item2) {
 let item = $(item2).val();
 (item1).push(item);
+
+}
+
+function emptyInfo () {
+    $("#songs").empty();
+    $("#artists").empty();
+    $("#length").empty();
+    $("#image").empty();
+    $("#link").empty();
 
 }
 
