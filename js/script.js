@@ -6,32 +6,32 @@ let links = []
 
 function showSong(){
     songs.forEach(function(song) {
-        $("#songs").append("<div>" + song + "</div>");
+        $("#songs").append("<p>" + song + "</p>");
     });
 }
 
 
 function showLength(){
     lengths.forEach(function(length) {
-        $("#lengths").append("<div>" + length + "</div>");
+        $("#lengths").append("<p>" + length + "</p>");
     });
 }
 
 function showArtist(){
     artists.forEach(function(artist) {
-        $("#artists").append("<div>" + artist + "</div>");
+        $("#artists").append("<p>" + artist + "</p>");
     });
 }
 
 function showImage() {
     images.forEach(function(image) {
-        $("#images").append("<div>" + "<img src=" + image + ">" + "</div>");
+        $("#images").append("<p>" + "<img src=" + image + ">" + "</p>");
     });
 }
 
 function showLink() {
     links.forEach(function(link) {
-        $("#links").append("<div>" + "<a href=" + link + ">" + "Listen" + "</a>" + "</div>");
+        $("#links").append("<p>" + "<a href=" + link + ">" + "Listen" + "</a>" + "</p>");
     })
 }
 
@@ -44,13 +44,14 @@ let item = $(item2).val();
 function emptyInfo () {
     $("#songs").empty();
     $("#artists").empty();
-    $("#length").empty();
-    $("#image").empty();
-    $("#link").empty();
+    $("#lengths").empty();
+    $("#images").empty();
+    $("#links").empty();
 
 }
 
-$("#add").click(function(){    
+$("#add").click(function(){   
+        emptyInfo();
         showSong();
         showArtist();
         showLength();
